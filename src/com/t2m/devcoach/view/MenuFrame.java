@@ -28,7 +28,7 @@ public class MenuFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         lblmenu = new javax.swing.JLabel();
-        btncadastrocliente = new javax.swing.JButton();
+        btncadastroprograma = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnrelatorio = new javax.swing.JButton();
         btnfeedback = new javax.swing.JButton();
@@ -37,10 +37,10 @@ public class MenuFrame extends javax.swing.JFrame {
 
         lblmenu.setText("Menu T2M Coach");
 
-        btncadastrocliente.setText("Cadastro de programas");
-        btncadastrocliente.addActionListener(new java.awt.event.ActionListener() {
+        btncadastroprograma.setText("Cadastro de programas");
+        btncadastroprograma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btncadastroclienteActionPerformed(evt);
+                btncadastroprogramaActionPerformed(evt);
             }
         });
 
@@ -75,7 +75,7 @@ public class MenuFrame extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblmenu)
                                 .addGap(11, 11, 11))
-                            .addComponent(btncadastrocliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btncadastroprograma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnrelatorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnfeedback, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 214, Short.MAX_VALUE)))
@@ -87,7 +87,7 @@ public class MenuFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lblmenu)
                 .addGap(42, 42, 42)
-                .addComponent(btncadastrocliente, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btncadastroprograma, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnfeedback, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -100,11 +100,11 @@ public class MenuFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btncadastroclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncadastroclienteActionPerformed
-        CadastroFrame cadastroFrame = new CadastroFrame();
-        cadastroFrame.setLocationRelativeTo(null);
-        cadastroFrame.setVisible(true);
-    }//GEN-LAST:event_btncadastroclienteActionPerformed
+    private void btncadastroprogramaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncadastroprogramaActionPerformed
+        ProgramaFrame cadastroPrograma = new ProgramaFrame();
+        cadastroPrograma.setLocationRelativeTo(null);
+        cadastroPrograma.setVisible(true);
+    }//GEN-LAST:event_btncadastroprogramaActionPerformed
 
     private void btnrelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrelatorioActionPerformed
         RelatorioFrame relatorioFrame = new RelatorioFrame();
@@ -153,7 +153,7 @@ public class MenuFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btncadastrocliente;
+    private javax.swing.JButton btncadastroprograma;
     private javax.swing.JButton btnfeedback;
     private javax.swing.JButton btnrelatorio;
     private javax.swing.JLabel jLabel2;
